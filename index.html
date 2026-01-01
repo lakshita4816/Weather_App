@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lakshita’s Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="logo.png">
+
+
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+        alt="Weather Logo"
+      />
+      <span>Lakshita’s Weather App</span>
+    </div>
+
+    <div class="nav-actions">
+      <button id="unitToggle">°F</button>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <div class="search-box">
+      <input
+        type="text"
+        id="locationInput"
+        placeholder="Search city"
+        autocomplete="off"
+      />
+      <ul id="suggestions"></ul>
+    </div>
+
+    <div id="loader" class="hidden">Loading...</div>
+    <div id="error" class="error hidden"></div>
+
+    <div id="weatherResult" class="weather-result hidden">
+      <h2 id="cityName"></h2>
+      <img id="weatherIcon" alt="Weather Icon" />
+      <p id="temperature"></p>
+      <p id="condition"></p>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
